@@ -1,0 +1,63 @@
+------------------------------------------------------------------------------------------
+
+SETTING PROJECT PARAMETERS ON CONNECTION STRINGS
+
+-- Right click connection manager> parametize [for the financial_data_warehouse and financial_transactions_db tables parametize server name]
+
+-- For excel and csv connection managers[ parametize file path and connection string]
+
+-- set the scope of the params to project
+
+------------------------------------------------------------------------------------------
+DEPLOYING SSIS PACKAGE TO SQL SERVER
+
+-- Project > Right click > Deploy
+-- Deployment wizzard > next > SSIS to SQL Server
+------------------------------------------------------------------------------------------
+INSTALL SSIS DB Catalog
+
+-- Go to SSMS
+--Management > Integration Services Catalog > Create catalog> Catalog wizard
+-- CLR Integrtion select> create a password> click ok
+-- After deploying, refresh SSIS DB Catalog
+------------------------------------------------------------------------------------------
+CREATING ENVIRONMENT PARAMETERS FOR DEPLOYMENT
+
+--Right click on SSIS DB > Environments> Create dev environment> properties> variables 
+-- Go to the project> Right click> configure
+-- Copy names from configure to environments variables
+
+-- Go project cinfiguration > Right click> configure> References> Add> Select dev environment
+-- Then go back to parameters > use environment variable> click ...> select all parameters so that they start with EV
+
+------------------------------------------------------------------------------------------
+CREATING SQL SERVER AGENT JOB
+
+-- SSMS> Jobs > New Job> name
+-- Configure steps
+
+------------------------------------------------------------------------------------------
+VIEW JOB HISTORY AND LOGS
+
+-- Go to the Job> Right click > View history
+-- Go to SSIS DB > Project> right click> All executions
+------------------------------------------------------------------------------------------
+SCHEDULING THE SQL SERVER JOB
+
+-- SQL Server Agent> Jobs> Properties> Schedule
+
+------------------------------------------------------------------------------------------
+EXCHANGE RATES API CALL WITH C#
+
+WORKING WITH C# SCRIPT COMPONENT
+
+- Source
+- Inputs and Outputs > Add column
+- Add 4 columns> chnage the data types
+
+
+
+
+
+   
+ 

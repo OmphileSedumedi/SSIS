@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Missing Supplier"
+  DTS:DTSID="{7F1150DB-D9A1-498E-A65D-37E55C4A1AB6}"
+  DTS:CreationName="FLATFILE">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::MissingSupplier_ConnectionString]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x003C_none_x003E_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="C:\Users\OmphileSedumedi\OneDrive - SuperGroup\Personal Development\SSIS\SSIS Portfolio Project 1\data\MissingSupplier.csv">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="3"
+          DTS:TextQualified="True"
+          DTS:ObjectName="transaction_id"
+          DTS:DTSID="{463D7162-AAE4-4204-88C3-21C67CE5F152}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="3"
+          DTS:TextQualified="True"
+          DTS:ObjectName="customer_id"
+          DTS:DTSID="{02B28243-4406-4304-A534-A1CC9D51F067}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="supplier_name"
+          DTS:DTSID="{C7010A4B-DE52-4409-A291-9A19729CE4B7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="133"
+          DTS:TextQualified="True"
+          DTS:ObjectName="transaction_date"
+          DTS:DTSID="{87F6B9F6-9443-49A3-991D-AC366678A5CD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="131"
+          DTS:DataPrecision="10"
+          DTS:DataScale="2"
+          DTS:TextQualified="True"
+          DTS:ObjectName="amount"
+          DTS:DTSID="{EECE0025-7597-4935-8A98-EE449394AB02}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="10"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="currency"
+          DTS:DTSID="{46BED30F-2B88-496D-95D0-CAB2F8CC92E9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="customer_name"
+          DTS:DTSID="{EEF198FB-AA85-49D8-AF52-3ACE650D77F7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="100"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="customer_email"
+          DTS:DTSID="{6EE80257-754B-45ED-B6A7-FEDF19394BF2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="20"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="customer_phone"
+          DTS:DTSID="{A1A39401-9327-40D0-9E81-1474888E3BC0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="5"
+          DTS:TextQualified="True"
+          DTS:ObjectName="exchange_rate"
+          DTS:DTSID="{8B11C021-D953-484B-99DA-0D6D2925D9E3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:DataType="5"
+          DTS:TextQualified="True"
+          DTS:ObjectName="amount_USD"
+          DTS:DTSID="{65C9E7AC-D645-4B72-AAB5-6F5C27D8699C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="100"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="supplier_contact_name"
+          DTS:DTSID="{AD963C4E-7D58-422B-B13D-D0A074C21F87}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000D__x000A_"
+          DTS:MaximumWidth="25"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="supplier_phone"
+          DTS:DTSID="{255F806E-EF2D-48CA-B1C1-92121F3AE09A}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
